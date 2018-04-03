@@ -12,7 +12,6 @@ def lambda_handler(event, context):
         "objectKey": 'max-aldunate-pro.zip'
     }
 
-    # check to see if the job was triggered by codepipeline
     try:
         job = event.get("CodePipeline.job")
         if job:
