@@ -5,7 +5,7 @@ import mimetypes
 
 def lambda_handler(event, context):
     sns = boto3.resource('sns', region_name='eu-west-1')
-    topic = sns.Topic('arn:aws:sns:eu-west-1:273389312991:MaxSnsTopic')
+    topic = sns.Topic('arn:aws:sns:eu-west-1:273389312991:max-pro-notifications')
 
     location = {
         "bucketName":'www.max.aldunate.pro.artifacts',
@@ -44,9 +44,9 @@ def lambda_handler(event, context):
         print "Job Complete."
 
     except:
-        #if job:c
-        #    codepipeline = boto3.client('codepipeline')
-        #    codepipeline.put_job_failure_result(jobId=job["id"], failureDetails=message["JobFailed"])
+        if job:
+            codepipeline = boto3.client('codepipeline')
+            codepipeline.put_job_failure_result(jobId=job["id"], failureDetails=message["JobFailed"])
         topic.publish(Subject="Serverless Max Pro Deployment Failed", Message="Serverless Max Pro Not Deployed Successfully")
 
         raise
