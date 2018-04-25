@@ -11,3 +11,4 @@ artifacts:
     - cv-max-aldunate-2018-02.pdf
     - styles/main.css
     - images/*
+    - practices/*
