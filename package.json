@@ -1,0 +1,43 @@
+{
+  "name": "max-aldunate-pro",
+  "version": "1.0.0",
+  "description": "My professional site and playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --mode development",
+    "webpack-watch": "webpack --mode development --watch",
+    "webpack-prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escamarla/max-aldunate-pro.git"
+  },
+  "keywords": [
+    "ddd",
+    "tdd",
+    "software",
+    "development",
+    "solutions",
+    "architecture",
+    "serverless",
+    "microservice"
+  ],
+  "author": "Max Aldunate <maxaldunate@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/escamarla/max-aldunate-pro/issues"
+  },
+  "homepage": "https://github.com/escamarla/max-aldunate-pro#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}
