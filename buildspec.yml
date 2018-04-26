@@ -7,7 +7,7 @@ phases:
       - npm test
   build:
     commands:
-      - npm run webpack
+      - npm run webpack-prod
 artifacts:
   files:
     - index.html
