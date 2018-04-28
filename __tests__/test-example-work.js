@@ -6,48 +6,23 @@ import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({adapter: new Adapter()});
 
-const myWork = [
-	{
-	'title': 'Microservices .NET',
-	'image': {
-		'desc': 'example screenshot of a project involving code',
-		'src': 'images/example1.png',
-		'comment': ''
-		}	
-	},
-	{
-	'title': 'DDD3+CQRS+TDD+SOLID',
-	'image': {
-		'desc': 'example screenshot of a project involving chemistry',
-		'src': 'images/example2.png',
-		'comment': ''
-		}	
-	},
-	{
-	'title': 'C#+JavaScript+Python',
-	'image': {
-		'desc': 'example screenshot of a project involving cats',
-		'src': 'images/example3.png',
-		'comment': '“Bengal cat” by roberto shabs is licensed under CC BY 2.0 https://www.flickr.com/photos/37287295@N00/2540855181'
-		}	
-	}	
-]
+import MyWorks from '../config/my-works'
 
 describe("ExampleWork component", () => {
-	let component = shallow(<ExampleWork work={myWork} />);
+	let component = shallow(<ExampleWork work={MyWorks} />);
 
 	it("Should be a 'section' element", () => {
 		expect(component.type()).toEqual('section');
 	});
 
 	it("Should containt as many childre as there are work examples", () => {
-		expect(component.find("ExampleWorkBubble").length).toEqual(myWork.length);
+		expect(component.find("ExampleWorkBubble").length).toEqual(MyWorks.length);
 	});
 
 });
 
 describe("ExampleWorkBubble component", () => {
-	let component = shallow(<ExampleWorkBubble example={myWork[1]} />);
+	let component = shallow(<ExampleWorkBubble example={MyWorks[1]} />);
 	let images = component.find("img");
 
 	it("Should contain a single 'img' element", () => {
@@ -55,7 +30,7 @@ describe("ExampleWorkBubble component", () => {
 	});
 
 	it("Should have the image src set correctly", () => {
-		expect(images.prop('src')).toEqual(myWork[1].image.src);
+		expect(images.prop('src')).toEqual(MyWorks[1].image.src);
 		//expect(5).toEqual(6);
 	});
 });
