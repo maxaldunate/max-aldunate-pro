@@ -3,7 +3,7 @@
 ### Deployed Site
 [Max Aldunate Pro](https://max.aldunate.pro)
 
-> Completely serveless website  
+> Completely serverless website  
 > Completely elastic infraestructure for any load  
 > High Available & Fault Tolerant  
 > CI/CD  
@@ -42,7 +42,7 @@ Serving at http://ThinkPadW520:8000, http://192.168.1.138:8000, http://192.168.5
 - Mocha - [https://mochajs.org]
 - Jest - [https://facebook.github.io/jest]
 - Webpack - [https://webpack.js.org]
-
+- Font Awesome - [https://fontawesome.com]
 ### Packages
 - [https://unpkg.com/babel-standalone@6.24.2/babel.js]
 - [https://unpkg.com/chai@3.5.0/chai.js]
@@ -54,3 +54,12 @@ Serving at http://ThinkPadW520:8000, http://192.168.1.138:8000, http://192.168.5
 - practices/react.html
 
 Max Aldunate <maxaldunate@gmail.com>
+
+
+### Pending Tasks
+
+- Automate lambda function for deployment upload with bash
+- improve this readme
+- download js packages and put in my own cdn
+- activate api gateway and read from dynamoDB
+

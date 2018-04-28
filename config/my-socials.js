@@ -1,0 +1,19 @@
+const MySocials = [
+  {
+    title: 'LinkedIn Profile',
+    icon: 'fa fa-linkedin',
+    href: 'https://www.linkedin.com/in/maxaldunate/',
+  },
+  {
+    title: 'GitHub Profile',
+    icon: 'fa fa-github',
+    href: 'https://github.com/maxaldunate',
+  },
+  {
+    title: 'Resume',
+    icon: 'fa fa-file-text',
+    href: 'cv-max-aldunate-2018-02.pdf',
+  }  
+];
+
+export default MySocials;
