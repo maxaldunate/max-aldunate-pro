@@ -1,6 +1,5 @@
 const AboutMe = [
-  "Web App Microservices Architecture",
-  "5+ years of experience (from 2012)",
+  "Web App Microservices Architecture 5+ years of experience (from 2012)",
   "ASP.NET MVC + JavaScript + Restfull Web API",
   "Windows Services .NET (C#)",
   "RabbitMQ durable and balanced (300 queues)",

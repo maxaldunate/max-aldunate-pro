@@ -10,7 +10,7 @@ const MySocials = [
     href: 'https://github.com/maxaldunate',
   },
   {
-    title: 'Resume',
+    title: 'Resume (CV)',
     icon: 'fa fa-file-text',
     href: 'cv-max-aldunate-2018-02.pdf',
   }  

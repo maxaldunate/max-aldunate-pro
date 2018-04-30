@@ -5,8 +5,8 @@
 
 > Completely serverless website  
 > Completely elastic infraestructure for any load  
-> High Available & Fault Tolerant  
-> CI/CD  
+> High available, cost-efficient, fault-tolerant and scalable
+> CI/CD  Continuous integration and delivery
 > Global CDN
 > Secure Connections Only  
 
