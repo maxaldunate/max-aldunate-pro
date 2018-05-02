@@ -59,7 +59,9 @@ Max Aldunate <maxaldunate@gmail.com>
 ### Pending Tasks
 
 - Automate lambda function for deployment upload with bash
+- split folders to deploy 'src' & change buildspec.yml
 - improve this readme
 - download js packages and put in my own cdn
 - activate api gateway and read from dynamoDB
+
 
