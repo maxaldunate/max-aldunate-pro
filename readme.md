@@ -43,6 +43,7 @@ Serving at http://ThinkPadW520:8000, http://192.168.1.138:8000, http://192.168.5
 - Jest - [https://facebook.github.io/jest]
 - Webpack - [https://webpack.js.org]
 - Font Awesome - [https://fontawesome.com]
+
 ### Packages
 - [https://unpkg.com/babel-standalone@6.24.2/babel.js]
 - [https://unpkg.com/chai@3.5.0/chai.js]
@@ -64,4 +65,15 @@ Max Aldunate <maxaldunate@gmail.com>
 - download js packages and put in my own cdn
 - activate api gateway and read from dynamoDB
 
+### Folder structure
+
+* Api
+  Backend API
+* Client
+  Static web
+* Infrastructure
+  Systems infrastructure
+* Deployment
+  Auomatic deploy of infrastructure & software
+  
 
