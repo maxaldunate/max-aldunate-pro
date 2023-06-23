@@ -12,7 +12,7 @@ const MySocials = [
   {
     title: 'Resume (CV)',
     icon: 'fa fa-file-text',
-    href: 'cv-max-aldunate-2018-02.pdf',
+    href: 'cv-max-aldunate-2023-06.pdf',
   }  
 ];
 

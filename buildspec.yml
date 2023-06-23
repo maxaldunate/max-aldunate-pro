@@ -12,7 +12,8 @@ artifacts:
   files:
     - index.html
     - favicon.ico
-    - cv-max-aldunate-2018-02.pdf
+    - cv-max-aldunate-2023-06.pdf
+    - cv.pdf
     - styles/main.css
     - images/*
     - practices/*
