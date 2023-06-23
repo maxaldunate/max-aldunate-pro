@@ -1,5 +1,5 @@
 import boto3
-import StringIO
+import io
 import zipfile
 import mimetypes
 
@@ -15,18 +15,18 @@ def lambda_handler(event, context):
     try:
         job = event.get("CodePipeline.job")
         if job:
-            print "Lambda triggered from codepipeline event"
+            print("Lambda triggered from codepipeline event")
             for artifact in job["data"]["inputArtifacts"]:
                 if artifact["name"] == "MyAppBuild":
                     location = artifact["location"]["s3Location"]
-        print "Building portfolio from " + str(location)
+        print("Building portfolio from " + str(location))
 
         s3 = boto3.resource('s3')
 
         portfolio_bucket = s3.Bucket('www.max.aldunate.pro')
         build_bucket = s3.Bucket(location["bucketName"])
 
-        portfolio_zip = StringIO.StringIO()
+        portfolio_zip = io.StringIO.StringIO()
 
         build_bucket.download_fileobj(location["objectKey"],portfolio_zip)
 
@@ -40,7 +40,7 @@ def lambda_handler(event, context):
             codepipeline = boto3.client('codepipeline')
             codepipeline.put_job_success_result(jobId=job["id"])
         topic.publish(Subject="Serverless Max Pro", Message="Serverless Max Pro Deployed Successfully")
-        print "Job Complete."
+        print("Job Complete.")
 
     except:
         if job:
@@ -49,4 +49,4 @@ def lambda_handler(event, context):
         topic.publish(Subject="Serverless Max Pro Deployment Failed", Message="Serverless Max Pro Not Deployed Successfully")
 
         raise
-        print "Job not successful."
+        print("Job not successful.")
